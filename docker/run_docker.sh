@@ -14,8 +14,9 @@ DOCKER_ENV_VARS="
 --env="DISPLAY" \
 --env="QT_X11_NO_MITSHM=1" \
 --env="NVIDIA_DRIVER_CAPABILITIES=all" \
+--env="NVIDIA_VISIBLE_DEVICES=all" \
 "
 DOCKER_ARGS=${DOCKER_VOLUMES}" "${DOCKER_ENV_VARS}
 
 # Run the command
-docker run -it --net=host --ipc=host --privileged ${DOCKER_ARGS} "$1" bash -c "$2"
+docker run -it --net=host --ipc=host --privileged ${DOCKER_ARGS} "$1" bash -c "$2" --runtime nvidia

@@ -100,6 +100,9 @@ Alternatively, you can use the pre-existing `sim` service to do this in a single
 ```
 docker compose up sim
 ```
+Here are some more demos for ensuring that display works in Docker, and for possible debugging purposes:
+[Dummy Robot](https://docs.ros.org/en/humble/Tutorials/Demos/dummy-robot-demo.html)
+[Turtlesim](https://medium.com/@anjitagargi/getting-start-with-ros2-turtlesim-bcb328ff804e)
 
 If you want to develop using Docker, you can also launch a dev container using:
 
